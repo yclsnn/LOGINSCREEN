@@ -64,7 +64,7 @@ class Pencere(QtWidgets.QWidget):
         self.cursor.execute("Select * From üyeler where kullanıcı_adı = ? and parola = ?",(adi,par))
         data = self.cursor.fetchall()
         if len(data) == 0:
-            self.yazi_alani.setText("Böyle bir kullanıcı yok\nLütfen tekrar deneyin.")
+            self.yazi_alani.setText("Böyle bir kullanıcı yoktur.\nLütfen tekrar deneyin.")
         else:
             self.yazi_alani.setText("Hoşgeldiniz " + adi)
 app = QtWidgets.QApplication(sys.argv)
