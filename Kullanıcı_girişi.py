@@ -52,7 +52,7 @@ class Pencere(QtWidgets.QWidget):
             data = self.cursor.fetchall()
             if len(data) == 0:
                 self.cursor.execute("Insert into üyeler Values(?,?)", (adi, par))
-                self.yazi_alani.setText(adi + " kullanıcısı eklendi.")
+                self.yazi_alani.setText(adi + "         kullanıcısı eklendi.")
                 self.baglanti.commit()
             else:
                 self.yazi_alani.setText("Farklı bir kullanıcı adı deneyin")
