@@ -30,7 +30,7 @@ class Pencere(QtWidgets.QWidget):
         h_box.addLayout(v_box)
         h_box.addStretch()
         self.setLayout(h_box)
-        self.setWindowTitle("KullanÄ±cÄ± GiriÅŸi")
+        self.setWindowTitle("KullanÄ±cÄ± GiriÅŸi hızlı çıkışı")
         self.giris.clicked.connect(self.click)
         self.kaydol.clicked.connect(self.click)
         self.show()
